@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Plugin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="bbb-form-main-parent">
+        <form action="">
+            <!-- ------------ Client Details ------------  -->
+            <div class="bbb-form-title">Client Details</div>
+            <div class="bbb-form-fields">
+                <div class="bbb-form-field-item">
+                    <label for="">Prefix</label>
+                    <select>
+                        <option value="" disabled selected>Not selected</option>
+                        <option value="Dr.">Dr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Rev.">Rev.</option>
+                    </select>
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Fullname</label>
+                    <input type="text">
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Phone</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+            </div>
+
+            <!-- ------------ Client Details ------------  -->
+            <div class="bbb-form-title">Package Details</div>
+            <div class="bbb-form-fields">
+                <div class="bbb-form-field-item">
+                    <label for="">Prefix</label>
+                    <select class="js-example-basic-single" name="state">
+                        <option value="" disabled selected>Add</option>
+                        <option value="Dr.">Dr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Rev.">Rev.</option>
+                    </select>
+                </div>
+
+                <div class="bbb-form-field-item">
+                    <label for="">Package</label>
+                    <input type="text">
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">No of Pax</label>
+                    <input type="text">
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Travel Date</label>
+                    <input type="date" id="basicDate">
+                </div>
+            </div>
+
+            <div class="bbb-form-fields bbb-form-fields-second">
+                <div class="bbb-form-field-item">
+                    <label for="">Executed From</label>
+                    <input type="text">
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Package Cost</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <!-- ------------ Hotel Details ------------  -->
+            <div class="bbb-form-title">Hotel Details</div>
+            <div class="bbb-form-fields">
+                <div class="bbb-hotel-details-table">
+                    <table>
+                        <tr>
+                            <th>Hotel Duration</th>
+                            <th>Hotel Name</th>
+                            <th>Room Inclusion:</th>
+                        </tr>
+                        <!-- <tr>
+                            <td>1 Night</td>
+                            <td> 5 star restaurant</td>
+                            <td>Daily breakfast and Dinner</td>
+                            <td>
+                                <div class="bbb-double-btns-parent">
+                                    <button class="bbb-edit-btn" type="button">Edit</button>
+                                    <button class="bbb-delete-btn" type="button">Delete</button>
+                                </div>
+                            </td>
+                        </tr> -->
+                        <tr class="bbb-no-hotel-parent">
+                            <td colspan="3" class="bbb-no-hotel">There are no hotels</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Duration</label>
+                                    <select name="bb_hotel_duration" id="bb-hotel-duration"
+                                        class="bbb-hotel-duration-val">
+                                        <option value="1 Night">1 Night</option>
+                                        <option value="2 Night">2 Night</option>
+                                        <option value="3 Night">3 Night</option>
+                                        <option value="4 Night">4 Night</option>
+                                        <option value="5 Night">5 Night</option>
+                                        <option value="6 Night">6 Night</option>
+                                        <option value="7 Night">7 Night</option>
+                                        <option value="8 Night">8 Night</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Name</label>
+                                    <select name="" id="" class="bbb-hotel-name-val">
+                                        <option value="5 star restaurant">5 star restaurant</option>
+                                        <option value="6 star restaurant">6 star restaurant</option>
+                                        <option value="7 star restaurant">7 star restaurant</option>
+                                        <option value="8 star restaurant">8 star restaurant</option>
+                                        <option value="9 star restaurant">9 star restaurant</option>
+                                        <option value="10 star restaurant">10 star restaurant</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Inclusion</label>
+                                    <select name="" id="" class="bbb-hotel-inclusion-val">
+                                        <option value="Daily breakfast and Dinner">Daily breakfast and Dinner</option>
+                                        <option value="Daily breakfast">Daily breakfast</option>
+                                        <option value="Daily Dinner">Daily Dinner</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="bbb-hotel-detailes-edit-delete-btns">
+                                    <button type="button" class="bbb-hotel-detailes-cancel-btn">Cancel</button>
+                                    <button type="button" class="bbb-hotel-detailes-add-btn">Add Hotel</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" class="bbb-add-hotel">Add Hotel</button>
+
+                    <div class="bbb-hotel-detailes-model-main-parent">
+                        <div class="bbb-hotel-detailes-model-parent">
+                            <div class="bbb-hotel-detailes-model-header">
+                                <h3>Add Hotel</h3>
+                            </div>
+                            <div class="bbb-hotel-detailes-model-body">
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Duration</label>
+                                    <select name="bb_hotel_duration" id="bb-hotel-duration"
+                                        class="bbb-hotel-duration-val">
+                                        <option value="1 Night">1 Night</option>
+                                        <option value="2 Night">2 Night</option>
+                                        <option value="3 Night">3 Night</option>
+                                        <option value="4 Night">4 Night</option>
+                                        <option value="5 Night">5 Night</option>
+                                        <option value="6 Night">6 Night</option>
+                                        <option value="7 Night">7 Night</option>
+                                        <option value="8 Night">8 Night</option>
+                                    </select>
+                                </div>
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Name</label>
+                                    <select name="" id="" class="bbb-hotel-name-val">
+                                        <option value="5 star restaurant">5 star restaurant</option>
+                                        <option value="6 star restaurant">6 star restaurant</option>
+                                        <option value="7 star restaurant">7 star restaurant</option>
+                                        <option value="8 star restaurant">8 star restaurant</option>
+                                        <option value="9 star restaurant">9 star restaurant</option>
+                                        <option value="10 star restaurant">10 star restaurant</option>
+                                    </select>
+                                </div>
+                                <div class="bbb-hotel-detailes-model-body-item">
+                                    <label for="">Hotel Inclusion</label>
+                                    <select name="" id="" class="bbb-hotel-inclusion-val">
+                                        <option value="Daily breakfast and Dinner">Daily breakfast and Dinner</option>
+                                        <option value="Daily breakfast">Daily breakfast</option>
+                                        <option value="Daily Dinner">Daily Dinner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bbb-hotel-detailes-model-footer">
+                                <button type="button"
+                                    class="bbb-hotel-detailes-save-btn bbb-hotel-detailes-update-btn">Save</button>
+                                <div class="bbb-hotel-detailes-edit-delete-btns">
+                                    <button type="button" class="bbb-hotel-detailes-cancel-btn">Cancel</button>
+                                    <button type="button" class="bbb-hotel-detailes-add-btn">Add Hotel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ------------ Extra Details ------------  -->
+            <div class="bbb-form-title">Extra Details</div>
+            <div class="bbb-form-fields bbb-form-fields-second">
+                <div class="bbb-form-field-item">
+                    <label for="">Tour Inclusions:</label>
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                        aria-placeholder="Click to select">
+                        <option value="Dr.">Dr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Rev.">Rev.</option>
+                    </select>
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Travel Inclusions:</label>
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                        aria-placeholder="Click to select">
+                        <option value="Dr.">Dr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Rev.">Rev.</option>
+                    </select>
+                </div>
+                <div class="bbb-form-field-item bbb-form-field-item-append-field-parent">
+                    <label for="">Prefix</label>
+                    <div class="bbb-new-append-field">
+                        <input type="text">
+                        <button type="button" class="bbb-add-btn"><i class="fa-solid fa-plus"></i></button>
+                        <button type="button" class="bbb-remove-btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="bbb-form-field-item">
+                    <label for="">Tour Exclusions</label>
+                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                        aria-placeholder="Click to select">
+                        <option value="Dr.">Dr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Rev.">Rev.</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+        integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
